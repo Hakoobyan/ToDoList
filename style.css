@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  color: white;
+  background-color: #1b1a17;
+}
+
+#toDoList header {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#taskInput {
+  margin: 20px 0;
+}
+#taskInput input {
+  outline: none;
+  padding: 10px;
+  width: 50%;
+  margin-right: 10px;
+  border-radius: 7px;
+  border: 2px solid;
+  border-color: #a35709;
+}
+
+#taskInput input:focus {
+  background-color: #111110bb;
+  transition: 1s linear;
+}
+
+#task {
+  background-color: #1b1a17;
+}
+
+input[type] {
+  color: white;
+}
+
+#taskInput button {
+  border: 2px solid;
+  border-color: #a35709;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+#taskInput button:hover {
+  background-color: #111110bb;
+  transition: 1s linear;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+#toDoList main {
+  background-color: rgb(12, 11, 11);
+  color: white;
+}
+
+#toDoList main li {
+  padding: 15px 0 10px 30px;
+  border-bottom: 1px solid rgb(44, 44, 44);
+  position: relative;
+}
+
+#toDoList main .remove {
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+  background-color: #111110bb;
+  transition: 0.5s linear;
+}
+.checked::before {
+  content: "\2713";
+  padding: 12px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#error {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: -50%;
+  top: 100px;
+  margin-top: 19px;
+  width: 40%;
+  background-color: #111110bb;
+  padding: 13px;
+  border: 2px solid;
+  border-color: #a35709;
+  border-radius: 7px;
+  transition: 1.5s all linear;
+  overflow: hidden;
+}
+#error.show {
+  left: 28%;
+}

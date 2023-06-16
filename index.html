@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List | Hakoobyan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="toDoList">
+            <header>
+                <h2>To Do List | Hakoobyan</h2>
+                <div id="taskInput">
+                    <input type="text" id="task">
+                    <button onclick="addTask()" type="button">	
+                        &#10133</button>
+                </div>
+                <span id="error" class="hide">Please write something*</span>
+            </header>
+            <main>
+                <ul>
+                    <li>Task 1
+                        <span class="remove">&#x274C</span>
+                    </li>
+                    <li class="checked">Task 2
+                        <span class="remove">&#x274C</span>
+                    </li>
+                    <li>Task 3
+                        <span class="remove">&#x274C</span>
+                    </li>
+                </ul>
+            </main>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
